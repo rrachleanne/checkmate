@@ -30,7 +30,7 @@ mongoose.connect(dbConn, {
 
 app.get('/', (req, res) => {
     console.log("get on /");
-    res.send("got your request");
+    res.send("Hello");
 })
 
 app.use('/posts', postRouter);
