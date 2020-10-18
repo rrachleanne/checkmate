@@ -1,13 +1,13 @@
 {
-    "name": "express-blog",
+    "name": "Checkmate",
     "version": "1.0.0",
-    "description": "Simple blog app to practice CRUD",
+    "description": "todo app",
     "main": "app.js",
     "scripts": {
         "test": "mocha",
         "start": "nodemon app.js"
     },
-    "author": "Janel",
+    "author": "Tom and Rach",
     "license": "ISC",
     "dependencies": {
         "body-parser": "^1.19.0",

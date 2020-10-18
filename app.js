@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const postRouter = require('./routes/posts_routes');
 
-const port = process.env.port || 3009;
+const port = process.env.port || 3000;
 
 const app = express();
 app.use(cors());
