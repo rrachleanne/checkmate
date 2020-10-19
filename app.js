@@ -9,7 +9,7 @@ const TodoTask = require("./models/TodoTask");
 
 const port = process.env.port || 3000;
 
-// tom IS nice
+
 
 const app = express();
 app.use(cors());
@@ -49,7 +49,7 @@ app.use("/static", express.static("public"));
 
 
 app.listen(port, () => {
-    console.log(`Blog express app listening on port ${port}`);
+    console.log(`To-do express app listening on port ${port}`);
 });
 
 
