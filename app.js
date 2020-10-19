@@ -4,6 +4,9 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const postRouter = require('./routes/posts_routes');
 
+//models
+const TodoTask = require("./models/TodoTask");
+
 const port = process.env.port || 3000;
 
 // tom IS nice
@@ -45,3 +48,19 @@ app.use("/static", express.static("public"));
 app.listen(port, () => {
     console.log(`Blog express app listening on port ${port}`);
 });
+
+
+app.use(express.urlencoded({ extended: true }));
+
+//POST METHOD
+app.post('/',async (req, res) => {
+    const todoTask = new TodoTask({
+    content: req.body.content
+    });
+    try {
+    await todoTask.save();
+    res.redirect("/");
+    } catch (err) {
+    res.redirect("/");
+    }
+    });
