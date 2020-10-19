@@ -4,7 +4,7 @@
     box-sizing: border-box;
     }
     body {
-    background: #e27442;
+    background: #cabbe9;
     }
     .todo-container {
     color: white;
@@ -14,25 +14,25 @@
     padding: 20px;
     width: 600px;
     transform: translate(-50%,-50%);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     }
     .todo {
-    width: 400px;
+    width: 500px;
     }
     .todo-container h2 {
     padding: 10px;
-    font-family: 'Candal', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 2em;
     }
     .todo-header input {
     width: 92%;
     border: none;
     border-radius: 5px;
-    height: 20px;
+    height: 35px;
     font-family: 'Candal', sans-serif;
     }
     .todo-header button {
@@ -42,7 +42,7 @@
     cursor: pointer;
     padding: 5px;
     font-family: 'Candal', sans-serif;
-    background-color: rgb(51, 212, 100);
+    background-color: white;
     }
     .todo-container ul {
     list-style: none;
@@ -102,4 +102,9 @@
     margin-right: 5px;
     cursor:pointer;
     text-decoration: none;
+    }
+
+    .fa-plus{
+        color: #cabbe9;
+        font-size: 25px;
     }
