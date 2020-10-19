@@ -6,8 +6,6 @@ const postRouter = require('./routes/posts_routes');
 
 const port = process.env.port || 3000;
 
-// tom IS nice
-
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
