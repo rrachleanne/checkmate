@@ -6,6 +6,8 @@ const postRouter = require('./routes/posts_routes');
 
 const port = process.env.port || 3000;
 
+
+
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
@@ -28,12 +30,17 @@ mongoose.connect(dbConn, {
         }
     });
 
-app.get('/', (req, res) => {
-    console.log("get on /");
-    res.send("got your request");
-})
+app.set("view engine", "ejs");
 
-app.use('/posts', postRouter);
+app.get('/',(req, res) => {
+    res.render('todo.ejs');
+    });
+
+// app.use('/posts', postRouter);
+
+app.use("/static", express.static("public"));
+
+
 
 app.listen(port, () => {
     console.log(`Blog express app listening on port ${port}`);
