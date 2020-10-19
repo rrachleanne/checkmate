@@ -4,6 +4,9 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const postRouter = require('./routes/posts_routes');
 
+//models
+const TodoTask = require("./models/TodoTask");
+
 const port = process.env.port || 3000;
 
 const app = express();
@@ -28,25 +31,63 @@ mongoose.connect(dbConn, {
         }
     });
 
-<<<<<<< HEAD
 app.set("view engine", "ejs");
 
-app.get('/',(req, res) => {
-    res.render('todo.ejs');
+// GET METHOD
+app.get("/", (req, res) => {
+    TodoTask.find({}, (err, tasks) => {
+    res.render("todo.ejs", { todoTasks: tasks });
+    });
     });
 
 // app.use('/posts', postRouter);
 
 app.use("/static", express.static("public"));
 
-=======
-app.get('/', (req, res) => {
-    console.log("get on /");
-    res.send("Hello");
-})
->>>>>>> d3cfd69b80c7aa8cbc42337cb048c379096e65ea
 
 
 app.listen(port, () => {
-    console.log(`Blog express app listening on port ${port}`);
+    console.log(`To-do express app listening on port ${port}`);
 });
+
+
+app.use(express.urlencoded({ extended: true }));
+
+//POST METHOD
+app.post('/',async (req, res) => {
+    const todoTask = new TodoTask({
+    content: req.body.content
+    });
+    try {
+    await todoTask.save();
+    res.redirect("/");
+    } catch (err) {
+    res.redirect("/");
+    }
+    });
+
+    //UPDATE
+app
+.route("/edit/:id")
+.get((req, res) => {
+const id = req.params.id;
+TodoTask.find({}, (err, tasks) => {
+res.render("todoEdit.ejs", { todoTasks: tasks, idTask: id });
+});
+})
+.post((req, res) => {
+const id = req.params.id;
+TodoTask.findByIdAndUpdate(id, { content: req.body.content }, err => {
+if (err) return res.send(500, err);
+res.redirect("/");
+});
+});
+
+//DELETE
+app.route("/remove/:id").get((req, res) => {
+    const id = req.params.id;
+    TodoTask.findByIdAndRemove(id, err => {
+    if (err) return res.send(500, err);
+    res.redirect("/");
+    });
+    });
