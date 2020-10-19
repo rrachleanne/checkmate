@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>Todo App</title>
+<title>Checkmate</title>
 <link rel="stylesheet" href="/static/stylesheets/style.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -8,7 +8,7 @@ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7
 </head>
 <body>
 <div class="todo-container">
-<h2>To-Do List</h2>
+<h2>My List</h2>
 <div class="todo">
 <form action="" method="POST" class="todo-header">
 <input type="text" name="content">
@@ -20,7 +20,7 @@ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7
 <li class="todo-list-item">
 <form action="/edit/<%= details._id %>" method="POST">
 <input type="text" value="<%= details.content %>" name="content">
-<button type="submit">Confirm</button>
+<button type="submit">Save</button>
 <a href="/" class="cancel">Cancel</a>
 </form>
 </li>
