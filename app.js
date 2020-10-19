@@ -30,7 +30,6 @@ mongoose.connect(dbConn, {
         }
     });
 
-<<<<<<< HEAD
 app.set("view engine", "ejs");
 
 app.get('/',(req, res) => {
@@ -41,12 +40,6 @@ app.get('/',(req, res) => {
 
 app.use("/static", express.static("public"));
 
-=======
-app.get('/', (req, res) => {
-    console.log("get on /");
-    res.send("Hello");
-})
->>>>>>> d3cfd69b80c7aa8cbc42337cb048c379096e65ea
 
 
 app.listen(port, () => {
