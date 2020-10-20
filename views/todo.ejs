@@ -49,8 +49,13 @@
                 </a>
                 <a href="/remove/<%= details._id %>" class="remove">
                 <span class="fas fa-times"></span>
+                <% if (details.completed){%>
                 <a href="/complete/<%= details._id %>" class="done">
-                    <span class="fas fa-check"></span>
+                    <span class="fas fa-check done"></span>
+                    <% }else {%>
+                        <a href="/complete/<%= details._id %>" class="done">
+                            <span class="fas fa-check"></span>
+                        <%} %>
                 </a>
                 </li>
                 <% }) %>
