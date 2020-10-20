@@ -18,4 +18,9 @@ router.get("/remove/:id", deleteTasks);
 //COMPLETE
 router.get("/complete/:id", completeTasks)
 
+router.get("/about", function(req,res){
+    res.render('about.ejs');
+  })
+
+
 module.exports = router

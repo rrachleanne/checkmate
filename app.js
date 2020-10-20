@@ -57,7 +57,9 @@ app.listen(port, () => {
 });
 
 
-
+app.get('./public/about.html',function(req,res){
+    res.sendFile(path.join(__dirname+'./public/about.html'));
+  });
 
 // //POST METHOD
 // app.post('/',async (req, res) => {
