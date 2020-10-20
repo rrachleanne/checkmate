@@ -15,6 +15,7 @@ const port = process.env.port || 3000;
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use(methodOverride('_method'));
 
@@ -56,7 +57,7 @@ app.listen(port, () => {
 });
 
 
-app.use(express.urlencoded({ extended: true }));
+
 
 // //POST METHOD
 // app.post('/',async (req, res) => {
