@@ -116,9 +116,14 @@
         font-size: 25px;
     }
 
-    .fa-edit, .fa-times{
+    .fa-edit, .fa-times, .fa-check{
         color: white;
         font-size: 15px;
+    }
+    .strikethrough{
+        text-decoration: line-through;
+        text-decoration-color: green;
+
     }
 
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

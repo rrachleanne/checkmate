@@ -44,10 +44,19 @@ const postTasks = async (req, res) => {
         });
         }
 
+    const completeTasks = (req, res) => {
+        const id = req.params.id;
+        TodoTask.findByIdAndUpdate(id, { completed: true }, err => {
+            if (err) return res.send(500, err);
+            res.redirect("/"); 
+        })
+    }
+
     module.exports = {
         getTasks,
         postTasks,
         editTasks,
         updateTasks,
-        deleteTasks
+        deleteTasks,
+        completeTasks
     }

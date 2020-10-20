@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {getTasks, postTasks, updateTasks, editTasks, deleteTasks} = require('../controllers/todo_controller')
+const {getTasks, postTasks, updateTasks, editTasks, deleteTasks, completeTasks} = require('../controllers/todo_controller')
 
 // GET METHOD
 router.get("/", getTasks);
@@ -13,7 +13,9 @@ router.get("/edit/:id", editTasks)
 router.put("/edit/:id", updateTasks)
 
 //DELETE
-router.delete("/remove/:id", deleteTasks);
+router.get("/remove/:id", deleteTasks);
 
+//COMPLETE
+router.get("/complete/:id", completeTasks)
 
 module.exports = router
