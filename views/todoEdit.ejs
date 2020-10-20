@@ -18,7 +18,8 @@ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7
 <% todoTasks.forEach(details => { %>
 <% if (details._id == idTask) { %>
 <li class="todo-list-item">
-<form action="/edit/<%= details._id %>" method="POST">
+<form action="/edit/<%= details._id %>?_method=PUT" method="POST">
+    <input type="hidden" name="_method" value="PUT">
 <input type="text" value="<%= details.content %>" name="content">
 <button type="submit">Save</button>
 <a href="/" class="cancel">Cancel</a>
