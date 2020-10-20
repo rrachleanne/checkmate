@@ -2,7 +2,7 @@
 
 Built by Tom Fisher and Rachel Williams:
 
-- \- <a href = "https://github.com/thomasjfisher" >Thomas Fisher - GitHub</a>
+ \- <a href = "https://github.com/thomasjfisher" >Thomas Fisher - GitHub</a>
 
   \- <a href = "https://github.com/rrachleanne" >Rachel Williams - GitHub</a>
 
@@ -76,11 +76,11 @@ INSERT INSERT PICTURE
 
 #### Wireframes
 
-![Checkmate Home Page]()
+![Checkmate Home Page](https://github.com/rrachleanne/checkmate/blob/master/public/imgs/Checkmate%20-%20Home%20Page.png)
 
-![Checkmate Log In]()
+![Checkmate Log In](https://github.com/rrachleanne/checkmate/blob/master/public/imgs/Checkmate%20-%20Log%20In.png)
 
-![Checkmate Sign In / Up]()
+![Checkmate Sign In / Up](https://github.com/rrachleanne/checkmate/blob/master/public/imgs/Checkmate%20-%20User%20Sign%20In:Up.png)
 
 #### Application Interface
 

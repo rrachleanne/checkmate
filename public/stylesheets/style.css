@@ -9,6 +9,7 @@
         background-attachment: fixed;
         background-size: cover;
     }
+
     .todo-container {
     color: white;
     position: absolute;
@@ -277,4 +278,11 @@
   }
   .fa-edit:hover {
     color: orange;
+  }
+  .home-header {
+    padding: 60px;
+    text-align: center;
+    background:rgba(255, 255, 255, 0.9);
+    background-image: ;
+    z-index: 99;
   }
