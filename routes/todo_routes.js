@@ -13,7 +13,7 @@ router.get("/edit/:id", editTasks)
 router.put("/edit/:id", updateTasks)
 
 //DELETE
-router.delete("/remove/:id", deleteTasks);
+router.get("/remove/:id", deleteTasks);
 
 
 module.exports = router
