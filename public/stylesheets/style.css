@@ -31,6 +31,7 @@
     .todo-header input {
     width: 92%;
     border: none;
+    background:rgba(255, 255, 255, 0.8);
     border-radius: 5px;
     height: 35px;
     font-family: 'Candal', sans-serif;
@@ -119,3 +120,8 @@
         color: white;
         font-size: 15px;
     }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: grey;
+         /* Firefox */
+      }
