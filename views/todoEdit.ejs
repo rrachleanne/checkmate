@@ -1,41 +1,57 @@
 <!DOCTYPE html>
-<head>
-<title>Checkmate</title>
-<link rel="stylesheet" href="/static/stylesheets/style.css" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
-<body>
-<div class="todo-container">
-<h2>My List</h2>
-<div class="todo">
-<form action="" method="POST" class="todo-header">
-<input type="text" name="content">
-<button type="submit"><span class="fas fa-plus"></span></button>
-</form>
-<ul class="todo-list">
-<% todoTasks.forEach(details => { %>
-<% if (details._id == idTask) { %>
-<li class="todo-list-item">
-<form action="/edit/<%= details._id %>?_method=PUT" method="POST">
-    <input type="hidden" name="_method" value="PUT">
-<input type="text" value="<%= details.content %>" name="content">
-<button type="submit">Save</button>
-<a href="/" class="cancel">Cancel</a>
-</form>
-</li>
-<% } else { %>
-<li class="todo-list-item">
-<div class="todo-list-item-name"><%= details.content %></div>
-<a href="/edit/<%= details._id %>" class="edit"> <span class="fas fa-edit"></span>
-</a>
-<a href="/remove/<%= details._id %>" class="remove"> <span class="fas fa-times"></span>
-</a>
-</li>
-<% } %>
-<% }) %>
-</ul>
-</div>
-</div>
-</body>
+    <head>
+    <title>Checkmate</title>
+        <link rel="stylesheet" href="/static/stylesheets/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    </head>
+    <body>
+        <!--------   Nav/Hamburger Menu --(STYLESHEET REF= Style 1)--------->
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      
+      <ul id="menu">
+        <a href="todo.ejs"><li>Home</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a href="my_lists.html"><li>My Lists</li></a>
+        <a href="login.html"><li>Login</li></a>
+       </ul>
+    </div>
+  </nav>
+    <div class="todo-container">
+        <h2>My List</h2>
+        <div class="todo">
+            <form action="" method="POST" class="todo-header">
+                <input type="text" name="content">
+                <button type="submit"><span class="fas fa-plus"></span></button>
+            </form>
+        <ul class="todo-list">
+            <% todoTasks.forEach(details => { %>
+            <% if (details._id == idTask) { %>
+        <li class="todo-list-item">
+        <form action="/edit/<%= details._id %>?_method=PUT" method="POST">
+            <input type="hidden" name="_method" value="PUT">
+             <input type="text" value="<%= details.content %>" name="content">
+                 <button type="submit">Save</button>
+                <a href="/" class="cancel">Cancel</a>
+            </form>
+            </li>
+        <% } else { %>
+        <li class="todo-list-item">
+        <div class="todo-list-item-name"><%= details.content %></div>
+            <a href="/edit/<%= details._id %>" class="edit"> <span class="fas fa-edit"></span>
+                </a>
+                <a href="/remove/<%= details._id %>" class="remove"> <span class="fas fa-times"></span>
+                </a>
+                </li>
+                <% } %>
+                <% }) %>
+            </ul>
+            </div>
+        </div>
+    </body>

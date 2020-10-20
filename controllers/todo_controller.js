@@ -9,6 +9,7 @@ const getTasks =(req, res) => {
     }
 
 const postTasks = async (req, res) => {
+    console.log(req.body.content)
         const todoTask = new TodoTask({
         content: req.body.content
         });
