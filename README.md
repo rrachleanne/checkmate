@@ -2,8 +2,9 @@
 
 Built by Tom Fisher and Rachel Williams:
 
-- https://github.com/thomasjfisher
-- https://github.com/rrachleanne
+- \- <a href = "https://github.com/thomasjfisher" >Thomas Fisher - GitHub</a>
+
+  \- <a href = "https://github.com/rrachleanne" >Rachel Williams - GitHub</a>
 
 ------
 
@@ -75,19 +76,13 @@ INSERT INSERT PICTURE
 
 #### Wireframes
 
-INSERT INSERT PICTURE
+![Checkmate Home Page]()
+
+![Checkmate Log In]()
+
+![Checkmate Sign In / Up]()
 
 #### Application Interface
 
 INSERT INSERT PICTURE
-
-#### Styling
-
-Logo
-
-Font
-
-Colour Palette
-
-Icons
 
