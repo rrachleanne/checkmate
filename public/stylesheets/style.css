@@ -295,7 +295,7 @@
   
   .jumbotron{
    
-    opacity: 85%;
+    box-shadow: 4px 4px whitesmoke;
     border-radius:50px ;
     margin: 120px;
     background-color: white;
@@ -311,5 +311,15 @@ h3 {
 }
 
 .col{
-  text-align: center;
+  text-a
+}
+
+img{
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+}
+
+.fa-github, .fa-linkedin{
+  color: grey;
 }
