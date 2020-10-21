@@ -12,9 +12,6 @@ Built by Tom Fisher and Rachel Williams:
 
 ------
 
-Deployed site:
-
-<u>**SITE GOES HERE**</u>
 
 #### Purpose
 
@@ -57,9 +54,7 @@ With an easy to use interface, users can create a to-do list in the matter of mi
 
 Checkmate designed the online application to be quick and efficient for creating items on a to-do list, with fast sign up forms and limited information required for the profile. From there, users can add a new list or search/view a previously existing list to work on.
 
-#### Sitemap
 
-INSERT INSERT PICTURE
 
 #### Technology Stack
 
@@ -86,7 +81,5 @@ INSERT INSERT PICTURE
 
 ![Checkmate Sign In / Up](https://github.com/rrachleanne/checkmate/blob/master/public/imgs/Checkmate%20-%20User%20Sign%20In:Up.png)
 
-#### Application Interface
 
-INSERT INSERT PICTURE
 
