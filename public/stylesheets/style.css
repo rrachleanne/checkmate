@@ -143,6 +143,7 @@
         background-image: url(../imgs/logo.png);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 200px 50px;
         display: block;
         margin-left: auto;
         margin-right: auto;
