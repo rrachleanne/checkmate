@@ -27,7 +27,7 @@ const postTasks = async (req, res) => {
             res.render("todoEdit.ejs", { todoTasks: tasks, idTask: id });
             });
         }
-    
+     
 
      const updateTasks = (req, res) => {
                 const id = req.params.id;
