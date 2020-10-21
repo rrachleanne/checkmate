@@ -2,6 +2,9 @@
 
 Built by Tom Fisher and Rachel Williams:
 
+ \- <a href = "https://checkmate-tasks.herokuapp.com/" >Deployed Site</a>
+
+
  \- <a href = "https://github.com/thomasjfisher" >Thomas Fisher - GitHub</a>
 
   \- <a href = "https://github.com/rrachleanne" >Rachel Williams - GitHub</a>
