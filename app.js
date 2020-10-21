@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const postRouter = require('./routes/posts_routes');
 const todoRouter = require('./routes/todo_routes');
 const methodOverride = require('method-override')
+const dbkey = require('./keys');
 
 
 //models
@@ -19,7 +20,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(methodOverride('_method'));
 
-const dbConn = 'mongodb://localhost/blog_app'
+const dbConn = dbkey
+console.log(dbkey)
 // Set three properties to avoid deprecation warnings:
 // useNewUrlParser: true
 // useUnifiedTopology: true
