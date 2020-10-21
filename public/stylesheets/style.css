@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
     }
     body {
         background-image: url('../imgs/checkmate_background.jpg'); 
@@ -30,7 +31,7 @@
     }
     .todo-container h2 {
     padding: 10px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 2em;
     }
     .todo-header input {
@@ -292,14 +293,14 @@
   .fa-edit:hover {
     color: orange;
   }
-  
+
   .jumbotron{
    
     box-shadow: 4px 4px whitesmoke;
     border-radius:50px ;
     margin: 120px;
     background-color: white;
-    font-family: 'Quattrocento Sans', sans-serif;
+    /* font-family: 'Quattrocento Sans', sans-serif; */
     font-size:15px;
     height: 450px;
     text-align: center
